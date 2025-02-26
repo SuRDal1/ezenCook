@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100..900&display=swap');
+/* import는 항상 맨 위에. */
+
+
+.nav-link:hover, .nav-link.active {
+    color: #ffc107 !important;
+}
+/* 네비게이션 영역 조건 만족시 색 변경, 우선순위를 최상으로 설정해 dark테마 덮어쓰기.*/
+
+
+header {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url("../images/main-bg.jpg");
+    background-size: cover;
+
+    background-position: center center;
+    /* 그림 축소시 보여줄 부분의 기준 정의. 디폴트는 좌상단, 크게 차이는 X. */
+};
+/* 헤더 배경용 */
+
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1,h2,h3,h4,.gugi-font {
+    font-family: "Gugi", serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+/* 폰트 설정 */
+
+
+#sns-links {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url("../images/sns-bg.jpg");
+    background-size: cover;
+    background-position: center;  
+    background-attachment: fixed;
+}
+/* sns 섹션 배경용, 개별 클래스를 만들기보단 id에 주는 것이 더 효율적. */
+
+
+@media (min-width:768px) and (max-width:1024px) {
+    .text {
+      font-size: 14px;
+    } 
+}
+/* 텍스트 넘침에 대한 조정. html문서에서도 .text클래스 적용 필요. */
+
+
+.card-hover:hover {
+    background-color: #ffc10726;
+    cursor: pointer;
+}
+/* 서비스 섹션 카드 호버시 */
+
+
+#news {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url("../images/news-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* 뉴스 섹션 배경용 */
